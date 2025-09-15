@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+$color-red-50: oklch(97.1% .013 17.38);
+$color-red-100: oklch(93.6% .032 17.717);
+$color-red-200: oklch(88.5% .062 18.334);
+$color-red-300: oklch(80.8% .114 19.571);
+$color-red-400: oklch(70.4% .191 22.216);
+$color-red-500: oklch(63.7% .237 25.331);
+$color-red-600: oklch(57.7% .245 27.325);
+$color-red-700: oklch(50.5% .213 27.518);
+$color-red-800: oklch(44.4% .177 26.899);
+$color-red-900: oklch(39.6% .141 25.723);
+$color-red-950: oklch(25.8% .092 26.042);
+
+$color-orange-50: oklch(98% .016 73.684);
+$color-orange-100: oklch(95.4% .038 75.164);
+$color-orange-300: oklch(83.7% .128 66.29);
+$color-orange-400: oklch(75% .183 55.934);
+$color-orange-500: oklch(70.5% .213 47.604);
+$color-orange-600: oklch(64.6% .222 41.116);
+$color-orange-700: oklch(55.3% .195 38.402);
+
+$color-amber-50: oklch(98.7% .022 95.277);
+$color-amber-100: oklch(96.2% .059 95.617);
+$color-amber-200: oklch(92.4% .12 95.746);
+$color-amber-300: oklch(87.9% .169 91.605);
+$color-amber-400: oklch(82.8% .189 84.429);
+$color-amber-500: oklch(76.9% .188 70.08);
+$color-amber-600: oklch(66.6% .179 58.318);
+$color-amber-700: oklch(55.5% .163 48.998);
+$color-amber-900: oklch(41.4% .112 45.904);
+
+$color-yellow-100: oklch(97.3% .071 103.193);
+$color-yellow-200: oklch(94.5% .129 101.54);
+$color-yellow-300: oklch(90.5% .182 98.111);
+$color-yellow-400: oklch(85.2% .199 91.936);
+$color-yellow-500: oklch(79.5% .184 86.047);
+$color-yellow-600: oklch(68.1% .162 75.834);
+$color-yellow-800: oklch(47.6% .114 61.907);
+
+$color-green-50: oklch(98.2% .018 155.826);
+$color-green-100: oklch(96.2% .044 156.743);
+$color-green-200: oklch(92.5% .084 155.995);
+$color-green-400: oklch(79.2% .209 151.711);
+$color-green-500: oklch(72.3% .219 149.579);
+$color-green-600: oklch(62.7% .194 149.214);
+$color-green-700: oklch(52.7% .154 150.069);
+$color-green-800: oklch(44.8% .119 151.328);
+
+$color-emerald-400: oklch(76.5% .177 163.223);
+$color-emerald-500: oklch(69.6% .17 162.48);
+$color-emerald-600: oklch(59.6% .145 163.225);
+
+$color-cyan-300: oklch(86.5% .127 207.078);
+$color-cyan-400: oklch(78.9% .154 211.53);
+$color-cyan-500: oklch(71.5% .143 215.221);
+$color-cyan-600: oklch(60.9% .126 221.723);
+
+$color-blue-50: oklch(97% .014 254.604);
+$color-blue-100: oklch(93.2% .032 255.585);
+$color-blue-200: oklch(88.2% .059 254.128);
+$color-blue-300: oklch(80.9% .105 251.813);
+$color-blue-400: oklch(70.7% .165 254.624);
+$color-blue-500: oklch(62.3% .214 259.815);
+$color-blue-600: oklch(54.6% .245 262.881);
+$color-blue-700: oklch(48.8% .243 264.376);
+$color-blue-800: oklch(42.4% .199 265.638);
+$color-blue-900: oklch(37.9% .146 265.522);
+$color-blue-950: oklch(28.2% .091 267.935);
+
+$color-indigo-100: oklch(93% .034 272.788);
+$color-indigo-200: oklch(87% .065 274.039);
+$color-indigo-500: oklch(58.5% .233 277.117);
+$color-indigo-600: oklch(51.1% .262 276.966);
+
+$color-violet-600: oklch(54.1% .281 293.009);
+
+$color-purple-50: oklch(97.7% .014 308.299);
+$color-purple-100: oklch(94.6% .033 307.174);
+$color-purple-200: oklch(90.2% .063 306.703);
+$color-purple-300: oklch(82.7% .119 306.383);
+$color-purple-400: oklch(71.4% .203 305.504);
+$color-purple-500: oklch(62.7% .265 303.9);
+$color-purple-600: oklch(55.8% .288 302.321);
+$color-purple-700: oklch(49.6% .265 301.924);
+$color-purple-900: oklch(38.1% .176 304.987);
+
+$color-pink-400: oklch(71.8% .202 349.761);
+$color-pink-500: oklch(65.6% .241 354.308);
+$color-pink-600: oklch(59.2% .249 .584);
+$color-pink-900: oklch(40.8% .153 2.432);
+
+$color-slate-50: oklch(98.4% .003 247.858);
+$color-slate-100: oklch(96.8% .007 247.896);
+$color-slate-200: oklch(92.9% .013 255.508);
+$color-slate-300: oklch(86.9% .022 252.894);
+$color-slate-400: oklch(70.4% .04 256.788);
+$color-slate-500: oklch(55.4% .046 257.417);
+$color-slate-600: oklch(44.6% .043 257.281);
+$color-slate-700: oklch(37.2% .044 257.287);
+$color-slate-800: oklch(27.9% .041 260.031);
+$color-slate-900: oklch(20.8% .042 265.755);
+$color-slate-950: oklch(12.9% .042 264.695);
+
+$color-gray-50: oklch(98.5% .002 247.839);
+$color-gray-100: oklch(96.7% .003 264.542);
+$color-gray-200: oklch(92.8% .006 264.531);
+$color-gray-300: oklch(87.2% .01 258.338);
+$color-gray-400: oklch(70.7% .022 261.325);
+$color-gray-500: oklch(55.1% .027 264.364);
+$color-gray-600: oklch(44.6% .03 256.802);
+$color-gray-700: oklch(37.3% .034 259.733);
+$color-gray-800: oklch(27.8% .033 256.848);
+$color-gray-900: oklch(21% .034 264.665);
+$color-gray-950: oklch(13% .028 261.692);
+
+$color-black: #000;
+$color-white: #fff;
+.section_one{
+  background: linear-gradient(to right, $color-red-600, $color-red-700);
+  position: relative;
+  padding: 170px 0px 50px 0px;
+  .icon_area{
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.2);
+  }
+  h1{
+    font-weight: 900;
+  }
+  p{
+    color: white;
+    opacity: 0.8;
+  }
+  small{
+    color: white;
+    opacity: 0.8;
+  }
+}
+.section_two{
+  padding: 50px;
+  h1{
+    font-weight: 700;
+  }
+  p{
+    color: $color-gray-600;
+  }
+  h6{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .left_pad{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    h2{
+      font-size: 20px;
+      font-weight: 700;
+      .icon{
+        color: $color-red-600;
+        font-size: 26px;
+        margin-right: 5px;
+      }
+    }
+    input{
+      border-radius: 10px;
+      padding: 10px 15px;
+    }
+    input::placeholder{
+      color: $color-gray-500;
+    }
+    input:focus{
+      box-shadow: $color-red-500 0px 1px 4px, $color-red-500 0px 0px 0px 3px;
+      border: 0;
+    }
+    textarea{
+      border-radius: 10px;
+      padding: 10px 15px;
+      color: $color-gray-700;
+    }
+    textarea::placeholder{
+      color: $color-gray-500;
+    }
+    textarea:focus{
+      box-shadow: $color-red-500 0px 1px 4px, $color-red-500 0px 0px 0px 3px;
+      border: 0;
+    }
+    select{
+      border-radius: 10px;
+      padding: 10px 15px;
+      color: $color-gray-700;
+    }
+    select::placeholder{
+      color: $color-gray-500;
+    }
+    select:focus{
+      box-shadow: $color-red-500 0px 1px 4px, $color-red-500 0px 0px 0px 3px;
+      border: 0;
+    }
+    button{
+      padding: 10px 20px;
+      background: $color-red-600;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: 0.3s;
+      .icon{
+        font-size: 26px;
+      }
+    }
+    button:hover{
+      background: $color-red-700;
+    }
+  }
+  
+
+  .button{
+    padding: 15px 30px;
+    background-color: $color-red-600;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  .button:hover{
+    background-color: $color-red-700;
+  }
+  .outline{
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: $color-red-600;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  .outline:hover{
+    background-color: $color-red-600;
+    color: $color-white;
+  }
+  .right_pad{
+    border-radius: 20px;
+    padding: 25px;
+    color: $color-black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    h5{
+      padding: 0 10px;
+      font-weight: 700;
+    }
+    .glass_card {
+      padding-top: 10px;
+      padding-left: 10px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+      display: flex;
+      align-items: top;
+      margin: 15px auto;
+      transition: 0.3s;
+      h3{
+        font-size: 16px;
+        color: $color-black;
+        font-weight: 700;
+      }
+      p{
+        font-size: 14px;
+        color: $color-gray-700;
+        margin: 0;
+      }
+      small{
+        font-size: 12px;
+        color: $color-gray-700;
+        margin: 0;
+      }
+    }
+    .icon_wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: $color-red-600;
+      transition: 0.5s;
+    }
+    .orange{
+      background: $color-red-100;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: $color-red-600;
+    }
+    .glass_card:hover{
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+  .right_pad_bottom {
+    border-radius: 20px;
+    padding: 25px;
+    color: $color-black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    h5{
+      padding: 0 10px;
+      font-weight: 700;
+    }
+    button{
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: 0.3s;
+      .icon{
+        font-size: 20px;
+      }
+    }
+    .red{
+      background: $color-red-600;
+      color: $color-white;
+    }
+    .red:hover{
+      background: $color-red-700;
+    }
+    .gray{
+      background-color: $color-gray-200;
+      color: $color-gray-600;
+    }
+    .gray:hover{
+      background-color: $color-gray-300;
+    }  
+  }
+}
+.section_three{
+  h6{
+    font-weight: 700;
+  }
+}
+.section_four{
+  padding: 25px;
+  margin-bottom: 50px;
+  .badge{
+    border: 0 !important;
+    margin-bottom: 10px;
+  }
+  h1{
+    font-weight: 700;
+  }
+  p{
+    color: $color-gray-600;
+  }
+  h6{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .button{
+    padding: 15px 30px;
+    background-color: $color-red-600;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  .button:hover{
+    background-color: $color-red-700;
+  }
+  .outline{
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: $color-red-600;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  .outline:hover{
+    background-color: $color-red-600;
+    color: $color-white;
+  }
+  .right_pad{
+    margin-top: 15px;
+    border-radius: 20px;
+    background: linear-gradient(to right, $color-red-600, $color-red-700);
+    padding: 25px;
+    color: $color-white;
+    h5{
+      font-weight: 700;
+    }
+    p{
+      color: $color-red-100;
+    }
+    .glass_card {
+      padding: 10px 15px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+      display: flex;
+      align-items: top;
+      margin: 15px auto;
+      transition: 0.3s;
+      h3{
+        font-size: 14px;
+        font-weight: 700;
+      }
+      p{
+        font-size: 12px;
+        color: $color-red-100;
+        margin: 0;
+      }
+    }
+    .icon_wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #fff;
+      transition: 0.5s;
+    }
+    .orange{
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #fff;
+    }
+    .glass_card:hover{
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+  .colored_card {
+      padding: 10px 15px;
+      border-radius: 15px;
+      color: $color-black !important;
+      display: flex;
+      align-items: top;
+      margin: 15px auto;
+      transition: 0.3s;
+      h3{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+      }
+      p{
+        font-size: 14px;
+        color: $color-gray-500;
+        margin: 0;
+      }
+    }
+    .green_card{
+      background: rgba(0, 255, 0, 0.08);
+      border: 1px solid rgba(0, 255, 0, 0.16);
+    }
+    .blue_card{
+      background: rgba(0, 0, 255, 0.08);
+      border: 1px solid rgba(0, 0, 255, 0.16);
+    }
+    .purple_card{
+      background: rgba(255, 0, 255, 0.08);
+      border: 1px solid rgba(255, 0, 255, 0.16);
+    }
+    .icon_wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: #fff;
+      transition: 0.5s;
+    }
+    .green{
+      background: rgba(0, 255, 0, 0.12);
+      color: $color-green-500;
+    }
+    .blue{
+      background: rgba(0, 0, 255, 0.12);
+      color: $color-blue-500;
+    }
+    .purple{
+      background: rgba(255, 0, 255, 0.12);
+      color: $color-purple-500;
+    }
+}
